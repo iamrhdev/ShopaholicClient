@@ -1,11 +1,15 @@
 import { Flex } from "@chakra-ui/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../navbar.scss";
 
 export default function NavBtn({ navLinks }) {
   return (
     <Flex flexDirection="row" justifyContent="space-between">
-      <ul style={{ listStyleType: "none", padding: 20, margin: 0 }}>
+      <ul
+        className="nav-links"
+        style={{ listStyleType: "none", padding: 20, margin: 0 }}
+      >
         {navLinks.map((link) => (
           <li
             key={link}
